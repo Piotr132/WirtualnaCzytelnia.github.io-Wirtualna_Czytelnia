@@ -1,0 +1,23 @@
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }
+
+.pagination-container {
+  width: 100%;
+  text-align: center;
+}
+.book:nth-child(6n+1) {
+  clear: both;
+}
+
+.search-field {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-bottom: 15px;
+}
+
+.favourite-icon {
+  color: black;
+  cursor: pointer;
+}
+.favourite-icon.is-favourite {
+  color: orange;
+}
