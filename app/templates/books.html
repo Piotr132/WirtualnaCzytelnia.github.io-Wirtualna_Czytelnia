@@ -2,12 +2,32 @@
   <!-- wyświetlenie skrótów książek -->
   <div class="row">
     <div class="books">
-      <div class="book col-sm-2" ng-repeat="book in books.books">
+      <div class="book col-sm-2" ng-repeat="book in books.currentItems">
         <book-teaser
           book="book"
           favourites="books.favouriteBooks"
         ></book-teaser>
       </div>
+    </div>
+  </div>
+  <!-- paginacja (dodawanie liczebności stron itd.)-->
+  <div class="row">
+    <div class="pagination-container">
+      <ul
+        uib-pagination
+        total-items="books.books.length"
+        ng-model="books.currentPage"
+        items-per-page="books.itemsPerPage"
+        max-size="books.showPageNumber"
+        boundary-links="true"
+        rotate="false"
+        class="pagination-sm"
+        first-text="Pierwsza"
+        last-text="Ostatnia"
+        next-text="Następna"
+        previous-text="Poprzednia"
+        ng-change="books.pageChanged()"
+      >
     </div>
   </div>
 </div>
