@@ -1,4 +1,13 @@
 <div class="container">
+  <!-- sekcja wyszukiwarki -->
+  <div class="row">
+    <div class="pull-right">
+      <div class="search-field">
+        <label for="search">Wyszukaj:</label>
+        <input type="text" name="search" ng-model="books.searchPhrase" ng-model-options="{ debounce: 500 }" ng-change="books.searchPhraseChanged()">
+      </div>
+    </div>
+  </div>
   <!-- wyświetlenie skrótów książek -->
   <div class="row">
     <div class="books">
@@ -10,7 +19,7 @@
       </div>
     </div>
   </div>
-  <!-- paginacja (dodawanie liczebności stron itd.)-->
+  <!-- paginacja -->
   <div class="row">
     <div class="pagination-container">
       <ul
