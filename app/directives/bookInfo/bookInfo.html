@@ -1,0 +1,27 @@
+<div class="book-info">
+    <div class="title">
+      {{bookInfo.book.title}}
+    </div>
+    <div class="cover">
+      <img ng-src="{{bookInfo.info.cover}}"/>
+    </div>
+    <div class="author">
+      <span>Autorzy:</span>
+      <span ng-repeat="author in bookInfo.info.authors">{{author.name}}, </span>
+    </div>
+    <div class="epochs">
+      <span>Epoki:</span>
+      <span ng-repeat="epoch in bookInfo.info.epochs">{{epoch.name}}, </span>
+    </div>
+    <div class="genres">
+      <span>Gatunki:</span>
+      <span ng-repeat="genre in bookInfo.info.genres">{{genre.name}}, </span>
+    </div>
+    <div class="kinds">
+      <span>Rodzaje:</span>
+      <span ng-repeat="kind in bookInfo.info.kinds">{{kind.name}}, </span>
+    </div>
+    <div class="read-link">
+      <a ng-href="{{bookInfo.info.pdf}}" target="_blank">Czytaj</a>
+    </div>
+</div>

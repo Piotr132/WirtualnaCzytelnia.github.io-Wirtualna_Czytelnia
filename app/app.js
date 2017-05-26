@@ -17,6 +17,16 @@ app.config(['$routeProvider', function($routeProvider) {
         }
 
     })
+    .when('/books/:book', {
+        templateUrl : 'app/templates/book.html', // plik html
+        controller: 'BookController',  // Nazwa kontrolera, który używany będzie na tej stronie
+        controllerAs: 'book',  // Nazwa kontrolera, która dostępna będzie w widoku, pliku html
+        resolve: {
+          bookInfo: ['api', '$route', function (api, $route) {
+            return api.getBookInfo($route.current.params.book); // pobieramy informacje o książce
+          }]
+        }
+    })
     .otherwise({
         redirectTo: '/' // jeśli nie weszliśmy na żaden z zadeklarowanych linków, wracamy na stronę główną
     });
