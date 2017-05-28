@@ -6,7 +6,8 @@ app.directive('bookTeaser', function() {
      templateUrl: 'app/directives/bookTeaser/bookTeaser.html',
      scope: {
        book: '=',
-       favourites: '='
+       favourites: '=',
+       showFavouriteIcon: '='
      },
      bindToController: true
   };

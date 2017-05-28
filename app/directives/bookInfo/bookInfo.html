@@ -5,6 +5,10 @@
     <div class="cover">
       <img ng-src="{{bookInfo.info.cover}}"/>
     </div>
+    <favourite
+      book="bookInfo.info"
+      favourites="bookInfo.favourites"
+    ></favourite>
     <div class="author">
       <span>Autorzy:</span>
       <span ng-repeat="author in bookInfo.info.authors">{{author.name}}, </span>

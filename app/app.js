@@ -1,4 +1,4 @@
-var app = angular.module('library', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+﻿var app = angular.module('library', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap']);
 app.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider    // tworzymy nasze routy - strony, przypisując im odpowiedni plik html oraz kontroller, a także resolve, czy akcje, które mają się uruchomić przed wejściem w ten route
@@ -13,6 +13,9 @@ app.config(['$routeProvider', function($routeProvider) {
         resolve: {
           books: ['api', function (api) {
             return api.getBooks();  // pobieramy książki z api
+          }],
+          favouriteBooks: ['favouritesService', function (favouritesService) {
+            return favouritesService.getFavourites();  // pobieramy listę ulubionych książek
           }]
         }
 

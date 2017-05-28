@@ -1,4 +1,4 @@
-app.controller('BooksController', ['books', 'loader', function (books, loader) {
+app.controller('BooksController', ['books', 'loader', 'favouriteBooks', function (books, loader, favouriteBooks) {
   var vm = this;
 
   vm.originalBooks = angular.copy(books);
@@ -9,6 +9,7 @@ app.controller('BooksController', ['books', 'loader', function (books, loader) {
   vm.currentItems = [];
   vm.searchPhrase = '';
   vm.loader = loader;
+  vm.favouriteBooks = favouriteBooks;
 
   vm.setItemsOnCurrentPage = function () {
     var startAt = Math.max((vm.currentPage - 1) * vm.itemsPerPage, 0);

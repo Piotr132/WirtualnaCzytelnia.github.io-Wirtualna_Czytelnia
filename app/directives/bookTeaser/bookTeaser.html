@@ -8,6 +8,12 @@
     <div class="title">
       {{bookTeaser.book.title}}
     </div>
+    <div class="favourite-wrapper" ng-show="bookTeaser.showFavouriteIcon">
+      <favourite
+        book="bookTeaser.book"
+        favourites="bookTeaser.favourites"
+      ></favourite>
+    </div>
     <div class="link">
       <a href ng-click="bookTeaser.goToBookInfo(bookTeaser.book.href)">Więcej</a>
     </div>
