@@ -1,4 +1,4 @@
-﻿var app = angular.module('library', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap']);
+var app = angular.module('library', ['ngRoute', 'ngAnimate', 'ngSanitize', 'ui.bootstrap', 'ngAudio']);
 app.config(['$routeProvider', function($routeProvider) {
 
     $routeProvider    // tworzymy nasze routy - strony, przypisując im odpowiedni plik html oraz kontroller, a także resolve, czy akcje, które mają się uruchomić przed wejściem w ten route
