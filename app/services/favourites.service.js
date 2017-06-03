@@ -26,4 +26,21 @@ app.service('favouritesService', ['$window', '$q', 'api', 'loader', function ($w
 
     vm.saveFavourites(favouriteBooks);  // zapisujemy w localStorage informacje o ulubionych książkach
   };
+
+  vm.getFavouritesBooksData = function() {
+    loader.enableLoader();
+    loader.lockChangingState();
+    var favouriteBooks = vm.getFavourites();
+    var promises = [];
+
+    for (var i = 0; i < favouriteBooks.length; i++) {
+      promises.push(api.getBookInfo(favouriteBooks[i]));
+    }
+
+    return $q.all(promises).then(function(results) {
+      loader.unlockChangingState();
+      loader.disableLoader();
+      return results;
+    });
+  };
 }]);

@@ -9,7 +9,7 @@ app.controller('HeaderController', ['$route', '$location', function ($route, $lo
     return $route.current.$$route.originalPath === path;
   };
 
-  vm.goToUrl = function (path) {  // przekierowyjemy na adres z parametru
+  vm.goToUrl = function (path) {  // przekierowanie na adres z parametru
     $location.path(path);
   }
 }]);

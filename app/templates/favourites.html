@@ -1,0 +1,14 @@
+<div class="container">
+  <!-- wyświetlenie skrótów książek -->
+  <div class="row">
+    <div class="books">
+      <div class="book col-sm-2" ng-repeat="book in favourites.books">
+        <book-teaser
+          book="book"
+          favourites="favourites.favouriteBooks"
+          show-favourite-icon="false"
+        ></book-teaser>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,6 +1,6 @@
 app.controller('BookController', ['ngAudio', 'bookInfo', function (ngAudio, bookInfo) {
   var vm = this;
-  vm.book = bookInfo; // przypisujemy do kontrolera wynik naszego resolve (app.j
+  vm.book = bookInfo; // przypisujemy do kontrollera wynik naszego resolve (app.j
   vm.audioFile = vm.book.media.filter(function(el) {
     return el.type === 'ogg' || el.type === 'mp3';
   })[0];  // znajdujemy plik ogg i mp3

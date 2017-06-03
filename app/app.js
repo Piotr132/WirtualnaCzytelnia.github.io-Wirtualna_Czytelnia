@@ -30,6 +30,16 @@ app.config(['$routeProvider', function($routeProvider) {
           }]
         }
     })
+    .when('/favourites', {
+        templateUrl : 'app/templates/favourites.html', // plik html
+        controller: 'FavouritesController',  // Nazwa kontrolera, który używany będzie na tej stronie
+        controllerAs: 'favourites',  // Nazwa kontrolera, która dostępna będzie w widoku, pliku html
+        resolve: {
+          favouriteBooks: ['favouritesService', function (favouritesService) {
+            return favouritesService.getFavouritesBooksData();  // pobieramy listę ulubionych książek z danymi
+          }]
+        }
+    })
     .otherwise({
         redirectTo: '/' // jeśli nie weszliśmy na żaden z zadeklarowanych linków, wracamy na stronę główną
     });
