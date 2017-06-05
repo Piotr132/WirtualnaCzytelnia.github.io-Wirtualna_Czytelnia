@@ -32,6 +32,18 @@
   color: orange;
 }
 
+.book-info .cover img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: 430px;
+}
+
+
+.book-teaser .link {
+  margin-bottom: 15px;
+}
+
 .loader {
   margin: 100px auto;
   font-size: 25px;

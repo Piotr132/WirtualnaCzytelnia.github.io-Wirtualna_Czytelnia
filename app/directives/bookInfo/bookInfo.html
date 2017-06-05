@@ -1,31 +1,39 @@
 <div class="book-info">
-    <div class="title">
-      {{bookInfo.book.title}}
-    </div>
-    <div class="cover">
+    <div class="cover col-sm-6">
       <img ng-src="{{bookInfo.info.cover}}"/>
     </div>
-    <favourite
-      book="bookInfo.info"
-      favourites="bookInfo.favourites"
-    ></favourite>
-    <div class="author">
-      <span>Autorzy:</span>
-      <span ng-repeat="author in bookInfo.info.authors">{{author.name}}, </span>
-    </div>
-    <div class="epochs">
-      <span>Epoki:</span>
-      <span ng-repeat="epoch in bookInfo.info.epochs">{{epoch.name}}, </span>
-    </div>
-    <div class="genres">
-      <span>Gatunki:</span>
-      <span ng-repeat="genre in bookInfo.info.genres">{{genre.name}}, </span>
-    </div>
-    <div class="kinds">
-      <span>Rodzaje:</span>
-      <span ng-repeat="kind in bookInfo.info.kinds">{{kind.name}}, </span>
-    </div>
-    <div class="read-link">
-      <a ng-href="{{bookInfo.info.pdf}}" target="_blank">Czytaj</a>
+    <div class="description-wrapper col-sm-6">
+      <div class="title">
+        <h3>Tytuł:</h3>
+        <div class="col-sm-offset-1">
+          {{bookInfo.info.title}}
+          <favourite
+            book="bookInfo.info"
+            favourites="bookInfo.favourites"
+          ></favourite>
+        </div>
+      </div>
+      <div class="author">
+        <h3>Autorzy:</h3>
+        <div class="col-sm-offset-1" ng-repeat="author in bookInfo.info.authors">{{author.name}} </div>
+      </div>
+      <div class="epochs">
+        <h3>Epoki:</h3>
+        <div class="col-sm-offset-1" ng-repeat="epoch in bookInfo.info.epochs">{{epoch.name}} </div>
+      </div>
+      <div class="genres">
+        <h3>Gatunki:</h3>
+        <div class="col-sm-offset-1" ng-repeat="genre in bookInfo.info.genres">{{genre.name}} </div>
+      </div>
+      <div class="kinds">
+        <h3>Rodzaje:</h3>
+        <div class="col-sm-offset-1" ng-repeat="kind in bookInfo.info.kinds">{{kind.name}} </div>
+      </div>
+
+      <br />
+
+      <div class="read-link">
+        <a ng-href="{{bookInfo.info.pdf}}" target="_blank">Przeczytaj książkę</a>
+      </div>
     </div>
 </div>
