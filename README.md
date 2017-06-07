@@ -27,53 +27,53 @@ Wykorzystywane technologie:
 Manual:
 -----
 * pliki html:
-1. [główny plik html aplikacji do którego dołączane są wszystkie pozostałe](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/index.html)
-2. [widok strony głównej](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/templates/main.html)
-3. [widok listy książek](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/templates/books.html)
-4. [widok szczegółów książki](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/templates/book.html)
-5. [widok ulubionych książek](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/templates/favourites.html)
+1. [główny plik html aplikacji do którego dołączane są wszystkie pozostałe](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/index.html)
+2. [widok strony głównej](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/templates/main.html)
+3. [widok listy książek](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/templates/books.html)
+4. [widok szczegółów książki](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/templates/book.html)
+5. [widok ulubionych książek](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/templates/favourites.html)
 * główne pliki aplikacji:
-1. [główny plik aplikacji, tutaj jest ona inicjowana, dołączane są linki pod kóre można wejść tzw. route'y](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/app.js)
+1. [główny plik aplikacji, tutaj jest ona inicjowana, dołączane są linki pod kóre można wejść tzw. route'y](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/app.js)
 * pliki konfiguracyjne:
-1. [tutaj znajduje się adres wykorzystywanego API](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/config.js)
+1. [tutaj znajduje się adres wykorzystywanego API](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/config.js)
 * kontrolery:
-1. [obsługa listy książek, deklaracja stronicowania oraz wyszukiwania](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/controllers/books.controller.js)
-2. [obsługa szczegółów książki, wczytywanie i obsluga audiobooka](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/controllers/book.controller.js)
-3. [obsługa "ulubionych", pobieranie i wyświetlanie książek i okładek dodanych do tej kategorii](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/controllers/favourites.controller.js)
+1. [obsługa listy książek, deklaracja stronicowania oraz wyszukiwania](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/controllers/books.controller.js)
+2. [obsługa szczegółów książki, wczytywanie i obsluga audiobooka](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/controllers/book.controller.js)
+3. [obsługa "ulubionych", pobieranie i wyświetlanie książek i okładek dodanych do tej kategorii](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/controllers/favourites.controller.js)
 * services:
-1. [komunikacja z API](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/services/api.service.js)
-2. [zarządzanie kategorią "ulubione" - dodawanie, usuwanie, obsługa LocalStorage, pobieranie szczegółów książki](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/services/favourites.service.js)
-3. [zarządzanie stanem loadera](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/services/loader.service.js)
+1. [komunikacja z API](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/services/api.service.js)
+2. [zarządzanie kategorią "ulubione" - dodawanie, usuwanie, obsługa LocalStorage, pobieranie szczegółów książki](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/services/favourites.service.js)
+3. [zarządzanie stanem loadera](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/services/loader.service.js)
 * directives:
 
   *lista książek:*
-    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/bookTeaser/bookTeaser.directive.js)
-    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/bookTeaser/bookTeaser.directive.js)
-    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/bookTeaser/bookTeaser.html)
+    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/bookTeaser/bookTeaser.directive.js)
+    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/bookTeaser/bookTeaser.directive.js)
+    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/bookTeaser/bookTeaser.html)
 
   *szczegóły wybranej książki:*
-    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/bookInfo/bookInfo.directive.js)
-    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/bookInfo/bookInfo.controller.js)
-    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/bookInfo/bookInfo.html)
+    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/bookInfo/bookInfo.directive.js)
+    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/bookInfo/bookInfo.controller.js)
+    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/bookInfo/bookInfo.html)
 
   *ulubione:*
-    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/favourite/favourite.directive.js)
-    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/favourite/favourite.controller.js)
-    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/favourite/favourite.html)
+    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/favourite/favourite.directive.js)
+    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/favourite/favourite.controller.js)
+    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/favourite/favourite.html)
 
   *strona główna:*
-    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/header/header.directive.js)
-    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/header/header.controller.js)
-    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/header/header.html)
+    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/header/header.directive.js)
+    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/header/header.controller.js)
+    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/header/header.html)
 
   *widok ładowania strony:*
-    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/loader/loader.directive.js)
-    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/loader/loader.controller.js)
-    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/directives/loader/loader.html)
+    1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/loader/loader.directive.js)
+    2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/loader/loader.controller.js)
+    3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/loader/loader.html)
 * obsługa dźwięku audiobook - w całości zaporzyczono z [ngAudio](https://github.com/danielstern/ngAudio):
-1. [bilblioteka obsługi dźwięku](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/libs/angular.audio.js)
+1. [bilblioteka obsługi dźwięku](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/libs/angular.audio.js)
 * css:
-1. [dostosowanie wyglądu całości aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/app/css/style.css)
+1. [dostosowanie wyglądu całości aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/css/style.css)
 
 
 Poprawność działania:
