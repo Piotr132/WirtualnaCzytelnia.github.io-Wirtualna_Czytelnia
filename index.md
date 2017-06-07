@@ -78,7 +78,7 @@ Manual:
 
 Poprawność działania:
 -----
-* aplikacja działa poprwanie lokalnie w przeglądarce Mozilla Firefox
+* aplikacja działa poprawnie lokalnie w przeglądarce Mozilla Firefox
 * aby korzystać z aplikacji w innej przeglądarce kliknij [tutaj](http://wizard.uek.krakow.pl/~s189858/WirtualnaCzytelnia.html)
 
 Autorzy aplikacji:
