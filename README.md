@@ -70,7 +70,7 @@ Manual:
     1. [definicja dyrektywy](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/loader/loader.directive.js)
     2. [kontroler dyrektywy odpowiadający za wyświetlanie](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/loader/loader.controller.js)
     3. [plik html z widokiem dyrektywy, który pokazywany jest na stronie aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/directives/loader/loader.html)
-* obsługa dźwięku audiobook - w całości zaporzyczono z [ngAudio](https://github.com/danielstern/ngAudio):
+* obsługa dźwięku audiobook - w całości zapożyczono z [ngAudio](https://github.com/danielstern/ngAudio):
 1. [bilblioteka obsługi dźwięku](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/libs/angular.audio.js)
 * css:
 1. [dostosowanie wyglądu całości aplikacji](https://github.com/WirtualnaCzytelnia/WirtualnaCzytelnia.github.io-Wirtualna_Czytelnia/blob/master/aplikacja/app/css/style.css)
